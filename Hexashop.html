@@ -1,0 +1,2324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+
+        ::-webkit-scrollbar {
+            width:0px;
+            background: transparent;
+        }
+
+        @media (min-width: 200px) and (max-width: 785px) {
+            .head1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;;
+        height: auto; 
+        background-color: white;
+        border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+        margin-bottom: 30px;
+
+    }
+   
+
+    .image11 {
+        height: 50px;
+        width: auto;
+       
+       
+    }
+
+    .head3 {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+      
+    }
+
+    .head2 {
+        display: none; 
+        z-index: 999;
+       
+    }
+
+    #menu-toggle:checked + .head2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        padding: 20px;
+        gap: 10px;
+        border: 1px solid dotted rgba(209, 207, 207, 0.934);
+        z-index: 999; 
+    }
+
+    .head2 a {
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+        transition: opacity 0.3s ease;
+        text-align: center;
+    }
+
+    .head2 a:hover {
+        color: gray;
+    }
+
+    .head2 a.active {
+        color: black;
+    }
+
+        img{
+            height:100%;
+            width:100%;
+        }
+       
+        .item{
+            height:100%;
+            width:100%;
+        }
+        .item1{
+            position:relative;
+            margin-bottom: 30px;
+           
+        }
+        .md{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+        }
+        .tc1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+           
+            }
+        .img111{
+            height:90%;
+            width:85%;
+        }
+
+        .img112{
+            height:90%;
+            width:85%;
+        }
+
+        .img113{
+            height:90%;
+            width:85%;
+        }
+
+        .img114{
+            height:90%;
+            width:85%;
+        }
+
+        .img115{
+            height:90%;
+            width:85%;
+        }
+
+        .hc2{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .hc3{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .hc4{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .hc5{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+          
+           
+
+            .button1 {
+                border: 1px solid white;
+                padding: 12px 25px;
+                display: inline-block;
+                transition: all .3s;
+                color: white;
+
+            }
+
+            .button1 a:hover{
+                background-color: whitesmoke;
+                color: transparent;
+
+            }
+
+            .item2{
+                position: relative;
+                margin-bottom: 30px;
+            }
+            .tc2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+                color: white;
+                z-index: 1;
+                transition: opacity 0.5s;
+            }
+
+            .hc2 {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                left: 15px;
+                bottom: 15px;
+                text-align: center;
+                background-color: rgba(42, 42, 42, .97);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+            }
+            .item2:hover .tc2 {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .item2:hover .hc2 {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .in2 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+            .main-border-button2 a {
+                border: 1px solid white;
+                padding: 12px 25px;
+                display: inline-block;
+                transition: all .3s;
+                color: white;
+                text-decoration: none;
+            }
+
+            .item3{
+                position: relative;
+                margin-bottom: 30px;
+            }
+            .tc3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+                color: white;
+                z-index: 1;
+                transition: opacity 0.5s;
+            }
+
+            .hc3 {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                left: 15px;
+                bottom: 15px;
+                text-align: center;
+                background-color: rgba(42, 42, 42, .97);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+            }
+            .item3:hover .tc3 {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .item3:hover .hc3 {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .in3 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+            .main-border-button3 a {
+                border: 1px solid white;
+                padding: 12px 25px;
+                display: inline-block;
+                transition: all .3s;
+                color: white;
+                text-decoration: none;
+            }
+
+
+            .item4{
+                position: relative;
+                margin-bottom: 30px;
+            }
+            .tc4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+                color: white;
+                z-index: 1;
+                transition: opacity 0.5s;
+            }
+            .hc4{
+                position: absolute;
+                top:15px;
+                right:15px;
+                left:15px;
+                bottom: 15px;
+                text-align: center;
+                background-color: rgba(42,42,42,.97);
+                opacity: 0;
+                visibility: hidden;
+                transition: all  0.5s;
+            }
+            .item4:hover .tc4 {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .item4:hover .hc4 {
+                opacity: 1;
+                visibility: visible;
+            }
+            .in4{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                width:100%;
+            }
+
+            .main-border-button4 a{
+                border: 1px solid white;
+                padding:12px 25px;
+                display: inline-block;
+                transition: all .3s;
+              
+                color: black;
+                
+            }
+            .main-border-button4:hover{
+                
+                background-color: lightgray;
+                color: white;
+                display: inline-block;
+            }
+
+            .item5{
+                position: relative;
+                margin-bottom: 30px;
+            }
+            .tc5{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+                color: white;
+                z-index: 1;
+                transition: opacity 0.5s;
+            }
+            .hc5{
+                position: absolute;
+                top:15px;
+                right:15px;
+                left:15px;
+                bottom: 15px;
+                text-align: center;
+                background-color: rgba(42,42,42,.97);
+                opacity: 0;
+                visibility: hidden;
+                transition: all  0.5s;
+            }
+            .item5:hover .tc5 {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .item5:hover .hc5 {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .in5{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                width:100%;
+            }
+
+            .main-border-button5 a{
+                border: 1px solid white;
+                padding:12px 25px;
+                display: inline-block;
+                transition: all .3s;
+              
+                color: black;
+                
+            }
+            .main-border-button5:hover{
+                
+                background-color: lightgray;
+                color: white;
+                display: inline-block;
+            }
+
+            #men{
+                padding-top: 90px;
+                padding-bottom: 90px;
+                border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+                padding: 30px 30px 30px 30px;
+                
+            }
+
+            .ar1{
+                display: none;
+            }
+            .a3{
+                display: none;
+            }
+            .a4{
+                display: none;
+            }
+            .ar2{
+                display: none;
+            }
+
+            .a2{
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+            .text1{
+                float:left;
+            }
+            .stars1{
+                float:right;
+            }
+
+
+            #women{
+                padding-top: 90px;
+                padding-bottom: 90px;
+                border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+                padding: 30px 30px 30px 30px;
+                
+            }
+
+            .w1{
+                display: none;
+            }
+            .a30{
+                display: none;
+            }
+            .a4{
+                display: none;
+            }
+            .w2{
+                display: none;
+            }
+            .a20{
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+            .text21{
+                float:left;
+            }
+            .stars21{
+                float:right;
+            }
+
+            #Kids{
+                padding-top: 90px;
+                padding-bottom: 90px;
+                border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+                padding: 30px 30px 30px 30px;
+                
+            }
+
+            .k1{
+                display: none;
+            }
+            .k30{
+                display: none;
+            }
+            .a4{
+                display: none;
+            }
+            .k2{
+                display: none;
+            }
+            .k20{
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+            .textk21{
+                float:left;
+            }
+            .starsk21{
+                float:right;
+            }
+
+            .eop{
+               
+                padding: 20px;
+                border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+                
+            }
+
+            .tc6{
+        padding-right: 30px;
+      
+       }
+
+       .col1{
+        position: relative;
+        width:100%;
+        padding-right: 15px;
+        padding-left: 5px;
+       }
+       .leather{
+        min-height: 255px;
+        background-color: #f8f8f8;
+        text-align: center;
+        width:100%;
+        
+       }
+       .col2{
+        position: relative;
+        width:100%;
+        padding-right: 15px;
+        padding-left: 5px;
+        padding-bottom: 15px;
+        
+       }
+       .col3{
+        position: relative;
+        width:100%;
+        padding-right: 15px;
+        padding-left: 5px;
+        padding-bottom: 15px;
+       }
+
+       .col4{
+        position: relative;
+        width:100%;
+        padding-right: 15px;
+        padding-left: 5px;
+      
+       }
+       .Types{
+        min-height: 205px;
+        background-color: #f8f8f8;
+        padding-top: 50px;
+        text-align: center;
+        width:100%;
+        }
+      
+       .SM1{
+        border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+        padding: 30px 30px 30px 30px; 
+        
+        }
+
+        .image-grid1{
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          padding:20px;
+        }
+
+        .image-grid img{
+          width:100%;
+          height:auto;
+        }
+        .subscribing {
+            width: 100%;
+            max-width: 765px;
+            padding:200px;
+            border-bottom: 3px dotted black;
+            background-color: pink;
+        }
+
+        .news{
+            padding:30px;
+        }
+        
+        .newsletter {
+           text-align: center;
+       }
+
+       .newsletter h1 {
+           font-size: 34px;
+           margin-bottom: 10px;
+           font-weight:700;
+           padding:200px;
+       }
+
+       .newsletter p {
+           font-size: 14px;
+           color: #666;
+          
+       }
+
+       .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .form input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+           
+        }
+
+        .form button {
+       background-color: #2a2a2a;
+       border: none;
+       cursor: pointer;
+       font-size: 16px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   .form button i {
+           
+           margin-left: 5px;
+       }
+
+       .about{
+           text-align: left;
+           font-size: 14px;
+           color: #333;
+       }
+
+       .about p {
+           margin-bottom: 5px;
+       }
+
+       .form input {
+                width: 100%;
+            }
+
+            .form button {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:5px;
+    padding: 10px;
+    max-width: 800px;
+    margin: 50px auto
+  
+   
+}
+
+.store {
+    padding: 20px;
+   }
+
+   .work {
+    padding: 20px;
+   }
+
+   .phone{
+    padding: 20px;
+   }
+
+   .email {
+    padding: 20px;
+   }
+
+   .office{
+    padding: 20px;
+   }
+
+   .socailmedia {
+    padding: 20px;
+   }
+
+.about h3 {
+    font-size: 20px;
+   
+}
+
+.about p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.4;
+}
+
+footer {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 10px;
+        }
+
+        .fc {
+           
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+        .logo {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .info {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .shopping {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        .useful{
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .help {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .shopping h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .useful h2{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .help h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .shopping ul {
+            list-style: none;
+        }
+        .useful ul {
+            list-style: none;
+        }
+
+        .help ul {
+            list-style: none;
+        }
+
+        .shopping ul li{
+            margin-bottom: 10px;
+        }
+
+        .useful ul li{
+            margin-bottom: 10px;
+        }
+
+        .help ul li {
+            margin-bottom: 10px;
+        }
+
+        .shopping ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .useful ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .help ul li a  {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .shopping ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .useful ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .help ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .help ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+        .fd {
+            border: 1px solid #444;
+            margin: 20px 0;
+        }
+
+        .fb {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .fb p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .fb a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        .fb a:hover {
+            text-decoration: underline;
+        }
+
+        .si{
+            margin-top: 10px;
+        }
+
+        .si a {
+            color: #00d9ff;
+            margin: 0 10px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .si a:hover {
+            color: #fff;
+        }
+
+        .fc {
+                flex-direction: column;
+                text-align: center;
+            }
+}
+
+ 
+    @media (min-width: 1024px) and (max-width: 2560px) {
+       
+        .head1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 100px;
+            height: 100px;
+            background-color: white;
+            border-bottom: 3px dotted rgba(209, 207, 207, 0.934); 
+        }
+
+        .image11 {
+            height: 70px;
+            width: auto;
+            
+        }
+
+        .head3{
+            display:none;
+        }
+
+      
+        .head2 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:space-between;
+            gap:50px;
+           
+           
+        }
+
+        .head2 a {
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+            padding: 0 10px;
+            transition: opacity 0.3s ease;
+           
+        }
+
+        
+        .Home {
+            opacity: 0.4;
+            
+        }
+        .Men {
+            opacity: 0.4;
+        
+            
+        }
+
+        
+        .head2 a:hover {
+            color: gray;
+        }
+
+        .head2 a.active {
+            color: black;
+        }
+
+        img{
+            height:100%;
+            width:100%;
+        }
+        .md{
+           
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 30px;
+            padding:10px;
+            padding-bottom: 50px;
+            border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+          
+           
+
+        }
+        .item{
+            height:100%;
+            width:100%;
+           
+        }
+        .item1{
+            grid-column: 1/3;
+            grid-row: 1/3;
+            position: relative;
+
+        }
+        .tc1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+           
+            }
+
+            .button1{
+                display: block;
+            }
+
+            .button1 a{
+                border: 1px solid white;
+                padding: 12px 25px;
+                display: inline-block;
+
+            }
+
+            .button1 a:hover{
+                background-color: white;
+                color: transparent;
+                
+
+            }
+
+            .item2{
+                position: relative;
+            }
+            .tc2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+                color: white;
+                z-index: 1;
+                transition: opacity 0.5s;
+            }
+
+            .hc2 {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                left: 15px;
+                bottom: 15px;
+                text-align: center;
+                background-color: rgba(42, 42, 42, .97);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+            }
+            .item2:hover .tc2 {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .item2:hover .hc2 {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .in2 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+           
+            .main-border-button2 a {
+                border: 1px solid white;
+                padding: 12px 25px;
+                display: inline-block;
+                transition: all .3s;
+                background-color: black;
+                text-decoration: none;
+            }
+
+
+            .item3{
+                position: relative;
+            }
+            .tc3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+           
+                z-index: 1;
+                transition: opacity 0.5s;
+            }
+
+            .hc3 {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                left: 15px;
+                bottom: 15px;
+                text-align: center;
+                background-color: rgba(42, 42, 42, .97);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+            }
+            .item3:hover .tc3 {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .item3:hover .hc3 {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .in3 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+            .main-border-button3 a {
+                border: 1px solid white;
+                padding: 12px 25px;
+                display: inline-block;
+                transition: all .3s;
+                background-color:rgba(42, 42, 42, .97);
+                text-decoration: none;
+            }
+            .item4{
+                position: relative;
+            }
+            .tc4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+                color: white;
+                z-index: 1;
+                transition: opacity 0.5s;
+            }
+
+            .hc4 {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                left: 15px;
+                bottom: 15px;
+                text-align: center;
+                background-color: rgba(42, 42, 42, .97);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+            }
+            .item4:hover .tc4 {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .item4:hover .hc4 {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .in4 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+
+            .main-border-button4 a {
+                border: 1px solid white;
+                padding: 12px 25px;
+                display: inline-block;
+                transition: all .3s;
+                background-color: rgba(42, 42, 42, .97);
+                text-decoration: none;
+            }
+
+
+
+            .item5{
+                position: relative;
+            }
+            .tc5{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+                z-index: 1;
+                transition: opacity 0.5s;
+            }
+            .hc5 {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                left: 15px;
+                bottom: 15px;
+                text-align: center;
+                background-color: rgba(42, 42, 42, .97);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+            }
+            .item5:hover .tc5 {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .item5:hover .hc5 {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .in5 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+            .main-border-button5 a {
+                border: 1px solid white;
+                padding: 12px 25px;
+                display: inline-block;
+                transition: all .3s;
+                background-color:rgba(42, 42, 42, .97);
+                text-decoration: none;
+            } 
+            #men{
+                padding-top: 90px;
+                padding-bottom: 90px;
+                border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+                padding: 30px 30px 30px 50px;
+               
+            }
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            #men .section-heading{
+                margin-bottom: 60px;
+              
+            }
+           
+            .Mitems{
+                display: grid;
+                grid-template-columns: auto 1fr 1fr 1fr auto;
+                gap:40px;
+                align-items: center;
+                padding: 40px 50px;
+             
+
+            }
+            .Mitems .img{
+                height:100%;
+                width:100%;
+            }
+
+            .a2{
+                display: block;
+                width:100%;
+            }
+            .a3{
+                display: block;
+                width:100%;
+            }
+            .a4{
+                display: block;
+                width:100%;
+            }
+            .container{
+                max-width: 1400px;
+            }
+            .bottom-section1 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                
+                .text1 {
+                    font-size: 20px;
+                }
+
+                .stars1 {
+                    color: black; 
+                }
+                
+                .price1{
+                        padding: 15px;
+                    }
+                .bottom-section2 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                
+                .text2 {
+                    font-size: 20px;
+                }
+
+                .stars2 {
+                    color: black; 
+                }
+                
+                .price2{
+                        padding: 15px;
+                    }
+
+                    .bottom-section3 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                
+                .text3 {
+                    font-size: 20px;
+                }
+
+                .stars3 {
+                    color: black; 
+                }
+                
+                .price3{
+                        padding: 15px;
+                    }
+
+               
+
+                .section h2{
+                    margin-left: 130px;
+                }
+
+                .section span{
+                    margin-left: 130px;
+                   
+                }
+
+                .ar1 img{
+                    
+                    height:40px;
+                    width:40px;
+                }
+
+
+                .ar2 img{
+                   
+                    height:40px;
+                    width:40px;
+                }
+
+
+
+                #women{
+                padding-top: 90px;
+                padding-bottom: 90px;
+                border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+                padding: 30px 30px 30px 50px;
+               
+            }
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            #women .section-heading{
+                margin-bottom: 60px;
+              
+            }
+           
+            .Witems{
+                display: grid;
+                grid-template-columns: auto 1fr 1fr 1fr auto;
+                gap:40px;
+                align-items: center;
+                padding: 40px 50px;
+             
+
+            }
+            .Witems .img{
+                height:100%;
+                width:100%;
+            }
+
+            .a20{
+                display: block;
+                width:100%;
+            }
+            .a30{
+                display: block;
+                width:100%;
+            }
+            .a4{
+                display: block;
+                width:100%;
+            }
+            .container{
+                max-width: 1400px;
+            }
+            .bottom-section21 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                
+                .text21 {
+                    font-size: 20px;
+                }
+
+                .stars21 {
+                    color: black; 
+                }
+                
+                .price21{
+                        padding: 15px;
+                    }
+                .bottom-section22 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                
+                .text22 {
+                    font-size: 20px;
+                }
+
+                .stars22 {
+                    color: black; 
+                }
+                
+                .price22{
+                        padding: 15px;
+                    }
+
+                    .bottom-section30 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+               
+
+                
+                .text31 {
+                    font-size: 20px;
+                }
+
+                .stars32 {
+                    color: black; 
+                }
+                
+                .price33 {
+                        padding: 15px;
+                    }
+
+               
+
+                .section h2{
+                    margin-left: 130px;
+                }
+
+                .section span{
+                    margin-left: 130px;
+                   
+                }
+
+                .w1 img{
+                    
+                    height:40px;
+                    width:40px;
+                }
+
+
+                .w2 img{
+                   
+                    height:40px;
+                    width:40px;
+                }
+
+                #Kids{
+                padding-top: 90px;
+                padding-bottom: 90px;
+                border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+                padding: 30px 30px 30px 50px;
+            }
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            #Kids .section-heading{
+                margin-bottom: 60px;
+              
+            }
+           
+            .Kitems{
+                display: grid;
+                grid-template-columns: auto 1fr 1fr 1fr auto;
+                gap:40px;
+                align-items: center;
+                padding: 40px 50px;
+             
+
+            }
+            .Kitems .img{
+                height:100%;
+                width:100%;
+            }
+
+            .k20{
+                display: block;
+                width:100%;
+            }
+            .k30{
+                display: block;
+                width:100%;
+            }
+            .a4{
+                display: block;
+                width:100%;
+            }
+            .container{
+                max-width: 1400px;
+            }
+            .bottom-section21 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                
+                .textk21 {
+                    font-size: 20px;
+                }
+
+                .starsk21 {
+                    color: black; 
+                }
+                
+                .pricek1{
+                        padding: 15px;
+                    }
+                .bottom-sectionk22 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                
+                .textk22 {
+                    font-size: 20px;
+                }
+
+                .starsk22 {
+                    color: black; 
+                }
+                
+                .pricek22{
+                        padding: 15px;
+                    }
+
+                    .bottom-sectionk30 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                
+                .textk31 {
+                    font-size: 20px;
+                }
+
+                .starsk32 {
+                    color: black; 
+                }
+                
+                .pricek33 {
+                        padding: 15px;
+                    }
+
+               
+
+                .section h2{
+                    margin-left: 130px;
+                }
+
+                .section span{
+                    margin-left: 130px;
+                   
+                }
+
+                .k1 img{
+                    
+                    height:40px;
+                    width:40px;
+                }
+
+
+                .k2 img{
+                   
+                    height:40px;
+                    width:40px;
+                }
+
+            .eop{
+           display:grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: repeat(2,1fr);
+           gap: 30px;
+           padding: 60px 170px;
+           border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+      
+       }
+       .item01{
+           height:100%;
+           width:100%;
+          
+       }
+       .item11{
+           grid-column: 1/3;
+           grid-row: 1/3;
+           position: relative;
+           
+
+       }
+
+       .item12{
+        position:relative;
+      
+       }
+
+       .item13{
+        position:relative;
+   
+     
+       }
+       .item14{
+        position: relative;
+     
+       }
+       .item15{
+        position: relative;
+       
+       }
+
+       .text-container6{
+        padding-right: 30px;
+       }
+
+       .col1{
+        position: relative;
+        width:100%;
+        padding-right: 15px;
+        padding-left: 15px;
+       }
+       .leather{
+        min-height: 255px;
+        background-color: #f8f8f8;
+        text-align: center;
+        width:100%;
+        
+       }
+       .col2{
+        position: relative;
+        width:100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        
+       }
+      
+
+
+       .col3{
+        position: relative;
+        width:100%;
+        padding-right: 15px;
+        padding-left: 15px;
+       }
+
+       .col4{
+        position: relative;
+        width:100%;
+        padding-right: 15px;
+        padding-left: 15px;
+      
+       }
+       .Types{
+        min-height: 205px;
+        background-color: #f8f8f8;
+        padding-top: 50px;
+        text-align: center;
+        width:100%;
+        
+       }
+       .SM1{
+        border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+        padding: 60px 140px;
+        }
+
+        .image-grid1{
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          padding:20px;
+        }
+
+        .image-grid img{
+          width:100%;
+          height:auto;
+        }
+
+       /* .subscribing{
+            display: none;
+        }*/
+
+        .sub{
+       display: grid;
+       grid-template-columns: auto auto;
+       padding:100px;
+       border-bottom: 3px dotted rgba(209, 207, 207, 0.934);
+ 
+   }
+   .news{
+      padding:50px;
+   }
+   .about{
+       display: grid;
+       grid-template-columns: auto auto;
+       padding:60px;
+       gap:30px;
+   }
+        #menu{
+            display:none;
+        }
+
+       
+
+    .logo{
+        height:50%;
+        width:80%;
+    }
+
+    .fc{
+        background-color: #2a2a2a;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap:20px;
+        padding:110px;
+    }
+
+
+    
+    .info {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+   
+        .info p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .shopping {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+           
+        }
+        .useful{
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .help {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        
+        .shopping h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            align-items: start;
+            justify-content: start;
+        }
+
+        .useful h2{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .help h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .shopping ul {
+            list-style: none;
+        }
+        .useful ul {
+            list-style: none;
+        }
+
+        .help ul {
+            list-style: none;
+        }
+
+        .shopping ul li{
+            margin-bottom: 10px;
+        }
+
+        .useful ul li{
+            margin-bottom: 10px;
+        }
+
+        .help ul li {
+            margin-bottom: 10px;
+        }
+
+        .shopping ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .useful ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .help ul li a  {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .shopping ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .useful ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .help ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .help ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+        .fd {
+            border: 1px solid #444;
+            margin: 20px 0;
+        }
+
+        .fb {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .fb p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .fb a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        .fb a:hover {
+            text-decoration: underline;
+        }
+
+        .si{
+            margin-top: 10px;
+        }
+
+        .si a {
+            color: #00d9ff;
+            margin: 0 10px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .si a:hover {
+            color: #fff;
+        }
+
+        .fc {
+                flex-direction: column;
+                text-align: start;
+            }
+        
+            .fb{
+                margin-top: -150px;
+            }
+
+        
+
+      
+}
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="head1">
+            
+            <img src="../images/logo.png" alt="logo" class="image11" />
+
+            <label for="menu-toggle" class="burger-menu head3">&#9776;</label>
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+
+           
+            <div class="head2">
+               <a href="#" class="Home" style=" font-size: 15px;">Home</a>
+                <a href="#" class="Mens" style="font-size: 15px;">Men's</a>
+                <a href="#" class="Womens" style="font-size: 15px;">Women's</a>
+                <a href="#" class="Kids" style="font-size: 15px;">Kid's</a>
+                <a href="#" class="Pages" style="font-size: 15px;">Pages</a>
+                <a href="#" class="Features" style="font-size: 15px;">Features</a>
+                <a href="#" class="Explore" style="font-size: 15px;">Explore</a>
+            </div> 
+
+
+            
+        </div>
+    </header>
+
+
+    <div class="md">
+       
+        <div class="item item1">
+            <img src="../images/left-banner-image.jpg" class="img111">
+            <div class="tc1">
+                <h3 style="color: white;font-size: 52px;font-weight: 700;">We Are Hexashop</h3>
+                <p style="color: white;font-size: 16px;font-weight: 400;margin-top: -40px;display: block;"><i>Awesome, clean & creative HTML5 Template </i></p>
+                <div class="button1"><a style="color: white;text-decoration: none;" href="#">Purchase Now!</a></div>
+            </div>
+            </div>
+        <div class="item item2">
+            <img src="../images/baner-right-image-01.jpg" class="img112"> 
+            <div class="tc2">
+                <h3 style="font-size: 24px;font-weight: 700;color: white;">Women</h3>
+                <p style="font-size: 16px;color: white;"><i>Best Clothes For Women</i></p>
+            </div>
+            <div class="hc2">
+                <div class="in2">
+                    <h4 style="color: white;font-size: 24px;font-weight: 700;margin-bottom: 15px;">Women</h4>
+                    <p style="font-size: 14px;line-height: 25px;color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="main-border-button2">
+                        <a style="color: white;text-decoration: none;" href="#">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item3">
+            <img src="../images/baner-right-image-02.jpg" class="img113">
+            <div class="tc3">
+                <h3 style="font-size: 24px;font-weight: 700;color: white;">Men</h3>
+                <p style="font-size: 16px;color: white;"><i>Best Clothes For Men</i></p>
+            </div>
+            <div class="hc3">
+                <div class="in3">
+                    <h4 style="color: white;font-size: 24px;font-weight: 700;margin-bottom: 15px;">Men</h4>
+                    <p style="font-size: 14px;line-height: 25px;color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="main-border-button3">
+                        <a style="color: white;text-decoration: none;" href="#">Discover More</a>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="item item4">
+            <img src="../images/baner-right-image-03.jpg" class="img114">
+            <div class="tc4">
+                <h3 style="font-size: 24px;font-weight: 700;color: white;">Kid's</h3>
+                <p style="font-size: 16px;color: white;"><i>Best Clothes For Kids</i></p>
+            </div>
+            <div class="hc4">
+                <div class="in4">
+                    <h4 style="color: white;font-size: 24px;font-weight: 700;margin-bottom: 15px;">Kids</h4>
+                    <p style="font-size: 14px;line-height: 25px;color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="main-border-button4">
+                        <a style="color: white;text-decoration: none;" href="#">Discover More</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="item item5">
+            <img src="../images/baner-right-image-04.jpg" class="img115">
+            <div class="tc5">
+                <h3 style="font-size: 24px;font-weight: 700;color: white;">Accessories</h3>
+                <p style="font-size: 16px;color: white;"><i>Best Trend Accessories</i></p>
+            </div>
+
+            <div class="hc5">
+                <div class="in5">
+                    <h4 style="color: white;font-size: 24px;font-weight: 700;margin-bottom: 15px;">Accessories</h4>
+                    <p style="font-size: 14px;line-height: 25px;color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="main-border-button5">
+                        <a style="color: white;text-decoration: none;" href="#">Discover More</a>
+                    </div>
+                
+                </div>
+            </div>
+
+        </div>
+   
+    </div>
+
+    <section class="section" id="men">
+        <div class="container">
+            <div class="row">
+                <div class="section heading">
+                    <h2 style="text-align: start;font-size: 32px;font-weight: 700;">Men's Latest</h2>
+                    <span style="text-align: start;font-size: 14px;font-weight: 400;font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;""><i>Details to details makes Hexashop different from others.</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="Mitems">
+                <div class="ar1"><img src="../images/prev.png" height="40px" width="40px"></div>
+                
+                <div class="a2"><img src="../images/men-01.jpg" class="img1" height="100px" width="100px">
+                    <div class="bottom-section1">
+          
+                        <div class="text1"><b>Classic Spring</b></div>
+            
+                       
+                        <div class="stars1">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                    <div class="price1" style="font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;">$110</div>
+                </div>
+                <div class="a3"><img src="../images/men-02.jpg" height="100px" width="100px">
+                    <div class="bottom-section2">
+          
+                        <div class="text2"><b>Air Force 1 X</b></div>
+            
+                       
+                        <div class="stars2">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                    <div class="price2" style="font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;">$90.00</div>
+                </div>
+                <div class="a4"><img src="../images/men-03.jpg" height="100px" width="100px">
+                    <div class="bottom-section3">
+          
+                        <div class="text3"><b>Love Nana'20</b></div>
+            
+                       
+                        <div class="stars3">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                    <div class="price3" style="font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;">$150.00</div>
+                </div>
+                <div class="ar2"><img src="../images/next.png" height="40px" width="40px"></div>
+            </div>
+           
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="section" id="women">
+        <div class="container">
+            <div class="row">
+                <div class="section heading">
+                    <h2 style="text-align: start;font-size: 32px;font-weight: 700;">Women's Latest</h2>
+                    <span style="text-align: start;font-size: 14px;font-weight: 400;font-style:italic; font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;""><i>Details to details makes Hexashop different from other themes.</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="Witems">
+                <div class="w1"><img src="../images/prev.png" height="40px" width="40px"></div>
+                
+                <div class="a20"><img src="../images/women-01.jpg" height="100px" width="100px">
+                    <div class="bottom-section21">
+          
+                        <div class="text21"><b>New Green Jacket</b></div>
+            
+                       
+                        <div class="stars21">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                    <div class="price1" style="font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;">$75.00</div>
+                </div>
+                <div class="a30"><img src="../images/women-02.jpg" height="100px" width="100px">
+                    <div class="bottom-section22">
+          
+                        <div class="text22"><b>Classic Dress</b></div>
+            
+                       
+                        <div class="stars22">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                    <div class="price22" style="font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;">$45.00</div>
+                </div>
+                <div class="a4"><img src="../images/women-03.jpg" height="100px" width="100px">
+                    <div class="bottom-section30">
+          
+                        <div class="text31"><b>Spring Collection</b></div>
+            
+                       
+                        <div class="stars32">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                    <div class="price33" style="font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;">$130.00</div>
+                </div>
+                <div class="w2"><img src="../images/next.png" height="40px" width="40px"></div>
+            </div>
+           
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="section" id="Kids">
+        <div class="container">
+            <div class="row">
+                <div class="section heading">
+                    <h2 style="text-align: start;font-size: 32px;font-weight: 700;">Kid's Latest</h2>
+                    <span style="text-align: start;font-size: 14px;font-weight: 400;font-style:italic;font-size: 14px;font-weight:400;color:#aaa;font-family:sans-serif"><i>Details to details makes Hexashop different from other themes.</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="Kitems">
+                <div class="k1"><img src="../images/prev.png" height="40px" width="40px"></div>
+                
+                <div class="k20"><img src="../images/kid-01.jpg" height="100px" width="100px">
+                    <div class="bottom-section21">
+          
+                        <div class="textk21"><b>School Collection</b></div>
+            
+                       
+                        <div class="starsk21">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                    <div class="pricek21" style=" font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;">$80.00</div>
+                </div>
+                      
+                    
+                <div class="k30"><img src="../images/kid-02.jpg" height="100px" width="100px">
+                    <div class="bottom-sectionk22">
+          
+                        <div class="textk22"><b>Summer Cap</b></div>
+            
+                       
+                        <div class="starsk22">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                    <div class="pricek22" style="font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;">$12.00</div>
+                </div>
+                <div class="a4"><img src="../images/kid-03.jpg" height="100px" width="100px">
+                    <div class="bottom-sectionk30">
+          
+                        <div class="textk31"><b>Classic Kid</b></div>
+            
+                       
+                        <div class="starsk32">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                    <div class="pricek33" style="font-size:14px; font-weight:400; color:#aaa; font-family:sans-serif;">$30.00</div>
+                </div>
+                <div class="k2"><img src="../images/next.png" height="40px" width="40px"></div>
+            </div>
+           
+            </div>
+           
+        </div>
+    </section>
+
+   
+    <div class="eop">
+        <div class="item01 item11">
+            <div class="tc6">
+                <h2 style="font-size: 34px;font-weight: 700;">Explore Our Products</h2>
+                <span style="font-size: 18px;font-weight: 500;display: block;text-align: justify;font-size: 14px;font-weight:400;color:#aaa;font-family:sans-serif">You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.</span><br>
+                <span style="font-size: 18px;font-weight: 500;text-align: justify;"><i>You are not allowed to redistribute this template ZIP file on any other website.</i></span><br><br>
+                <p style="font-size: 18px;font-weight: 500;display: block;text-align: justify;font-size: 14px;font-weight:400;color:#aaa;font-family:sans-serif">There are 5 pages included in this HexaShop Template and we are providing it to you for absolutely free of charge at our TemplateMo website. There are web development costs for us.</p><br>
+                <p style="font-size: 18px;font-weight: 500;display: block;text-align: justify;font-size: 14px;font-weight:400;color:#aaa;font-family:sans-serif">If this template is beneficial for your website or business, please kindly support us a little via PayPal. Please also tell your friends about our great website. Thank you.</p><br><br>
+                <button>Discover More </button>
+            </div>
+        </div>
+        <div class="item01 item12">
+            <div class="col1">
+                <div class="leather">
+                    <h4 style="font-size: 24px;font-weight: 700;padding-top: 90px;margin-bottom: 5px;">Leather Bags</h4>
+                    <span><i>Latest Collection</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="item01 item13">
+            <div class="col2">
+                <div class="img13" style="padding-top: 30px;margin-bottom: 5px;">
+                <img src="../images/explore-image-01.jpg" class="imgexp1 ">
+            </div>
+            </div>
+        </div>
+        <div class="item01 item14">
+            <div class="col3">
+            <div class="img14">
+            <img src="../images/explore-image-02.jpg" class="imgexp2">
+        </div>
+        </div>
+        </div>
+        <div class="item01 item15">
+            <div class="col4">
+                <div class="Types">
+                    <h4 style="font-size: 24px;font-weight: 700;text-align:center;margin-bottom:5px;">Different Types</h4>
+                    <span><i>Over 304 Products</i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="SM1">
+        <h2 style="text-align: start;margin-left: 15px;font-size: 34px;font-weight: 700;color:#2a2a2a">Social Media</h2>
+
+       
+        <p class="s1" style="font-style:italic;font-size: 14px;font-weight:400;color:#aaa;font-family:sans-serif;margin-left: 15px;">Details to details is what makes Hexashop different from the other themes.</p>
+
+       
+        <div class="image-grid1 ">
+            <img src="../images/instagram-01.jpg" alt="Image 1" class="gdimg1">
+            <img src="../images/instagram-02.jpg" alt="Image 2" class="gdimg2">
+            <img src="../images/instagram-03.jpg" alt="Image 3" class="gdimg3">
+            <img src="../images/instagram-04.jpg" alt="Image 4" class="gdimg4">
+            <img src="../images/instagram-05.jpg" alt="Image 5" class="gdimg5">
+            <img src="../images/instagram-06.jpg" alt="Image 6" class="gdimg6">
+        </div>
+    </div>
+    </div>
+
+    <div class="sub">
+        <div class="news">
+            <h2 style="font-size: 34px;font-family: sans-serif;font-weight: 700;color:#2a2a2a">By Subscribing To Our Newsletter You Can Get 30% Off</h2>
+            <p style="font-style:italic;font-size: 14px;font-weight:400;color:#aaa;font-family:sans-serif">Details to details is what makes Hexashop different from the other themes.</p><br><br>
+            <form class="form">
+                <input type="text" placeholder="Your Name" style="font-style: italic;padding:5px" required>
+                <input type="email" placeholder="Your Email Address" style="font-style: italic;padding:5px" required>
+                <button type="submit"><svg fill ="white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" width="34px" height="34px" stroke="black"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;} </style> <path d="M19.2,4.4L2.9,10.7c-1.1,0.4-1.1,1.1-0.2,1.3l4.1,1.3l1.6,4.8c0.2,0.5,0.1,0.7,0.6,0.7c0.4,0,0.6-0.2,0.8-0.4 c0.1-0.1,1-1,2-2l4.2,3.1c0.8,0.4,1.3,0.2,1.5-0.7l2.8-13.1C20.6,4.6,19.9,4,19.2,4.4z M17.1,7.4l-7.8,7.1L9,17.8L7.4,13l9.2-5.8 C17,6.9,17.4,7.1,17.1,7.4z"></path> <rect y="0" class="st0" width="24" height="24"></rect> </g></svg></button>
+               
+            </form>
+        </div>
+        
+    <div class="about">
+        <div class="store">
+            <h3>Store Location:</h3>
+            <p style="font-size: 14px;font-weight: 400;color:#aaa;font-family:sans-serif;">Sunny Isles Beach, FL<br>33160, United States</p>
+        </div>
+        <div class="work">
+            <h3>Work Hours:</h3>
+            <p style="font-size: 14px;font-weight: 400;color:#aaa;font-family:sans-serif;">07:30 AM - 9:30 PM<br>Daily</p>
+        </div>
+        <div class="phone">
+            <h3>Phone:</h3>
+            <p style="font-size: 14px;font-weight: 400;color:#aaa;font-family:sans-serif;">010-020-0340</p>
+        </div>
+        <div class="email">
+            <h3>Email:</h3>
+            <p style="font-size: 14px;font-weight: 400;color:#aaa;font-family:sans-serif;">info@company.com</p>
+        </div>
+        <div class="office">
+            <h3>Office Location:</h3>
+            <p style="font-size: 14px;font-weight: 400;color:#aaa;font-family:sans-serif;">North Miami Beach</p>
+        </div>
+        <div class="socailmedia">
+            <h3>Social Media:</h3>
+            <p style="font-size: 14px;font-weight: 400;color:#aaa;font-family:sans-serif;">Facebook, Instagram,<br>Behance, LinkedIn</p>
+        </div>
+    </div>
+</div>
+
+    <footer>
+       
+        <div class="fc">
+            <div class="logo">
+                <img src="../images/white-logo.png">
+            
+            <div class="info">
+                <p style="color: white;">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</p>
+                <p style="color: white;">hexashop@company.com</p>
+                <p style="color: white;">010-020-0340</p>
+            </div>
+        </div>
+            <div class="shopping">
+                <h2 style="color: white;">Shopping & Categories</h2>
+                <ul>
+                    <li><a href="#">Men's Shopping</a></li>
+                    <li><a href="#">Women's Shopping</a></li>
+                    <li><a href="#">Kid's Shopping</a></li>
+                </ul>
+            </div>
+            <div class="useful">
+                <h2 style="color: white;">Useful Links</h2>
+                <ul>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+              <div class="help">
+                <h2 style="color: white;">Help & Information</h2>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Tracking ID</a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+       
+        <hr class="fd">
+        <div class="fb">
+            <p style="color: white;">Copyright @ 2022 HexaShop Co., Ltd. All Rights Reserved.</p>
+            <p style="color: white;">Design: <a href="#">TemplateMo</a></p>
+            <div class="si">
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+        </div>
+   
+    </footer>
+   
+        
+
+</body>
+</html>
